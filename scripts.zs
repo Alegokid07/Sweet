@@ -3,6 +3,7 @@
 <recipetype:thermal:refinery>.addRecipe("refinery_test_with_fluid", <item:minecraft:air>, [<fluid:minecraft:milk> *500, <fluid:thermal:syrup> *500], <fluid:create:chocolate> *1000, 500);
 <recipetype:botania:petal_apothecary>.removeAll();
 <recipetype:botania:petal_apothecary>.addRecipe("test", <item:botania:gourmaryllis>, <item:botania:green_petal>, <item:botania:green_petal>, <item:botania:lime_petal>, <item:botania:yellow_petal>);
+//Because Cyclic things are OP and laggy
 craftingTable.removeRecipe(<item:cyclic:fluid_pipe>);
 craftingTable.removeRecipe(<item:cyclic:item_pipe>);
 craftingTable.removeRecipe(<item:cyclic:energy_pipe>);
@@ -14,6 +15,7 @@ craftingTable.removeRecipe(<item:cyclic:crystal_chestplate>);
 craftingTable.removeRecipe(<item:cyclic:crystal_leggings>);
 craftingTable.removeRecipe(<item:cyclic:crystal_helmet>);
 craftingTable.removeRecipe(<item:cyclic:crystal_boots>);
+//to make good armor annoying
 smithing.addRecipe("yetitorefob", <item:mekanismtools:refined_obsidian_chestplate>, <item:twilightforest:yeti_chestplate>, <item:create:shadow_steel>);
 smithing.addRecipe("yetitorefobl", <item:mekanismtools:refined_obsidian_leggings>, <item:twilightforest:yeti_leggings>, <item:create:shadow_steel>);
 smithing.addRecipe("yetitorefobh", <item:mekanismtools:refined_obsidian_helmet>, <item:twilightforest:yeti_helmet>, <item:create:shadow_steel>);
@@ -64,6 +66,7 @@ craftingTable.addShaped("1adf76d8-a764-444f-964f-bd326894ba68", <item:advancedro
 	[<item:advancedrocketry:circuit_ic_control>, <item:advancedrocketry:blastbrick>, <item:advancedrocketry:circuit_ic_item_io>], 
 	[<item:tconstruct:scorched_brick>, <item:twilightforest:fiery_ingot>, <item:tconstruct:scorched_brick>]
 ]);
+//Rubbery Titanium = Iridium
 <recipetype:tconstruct:casting_table>.addItemCastingRecipe("titaniumalumide", <item:botania:manasteel_ingot>, <fluid:industrialforegoing:latex> * 1000, <item:libvulpes:ingotiridium>, 200, true, true);
 <recipetype:botania:petal_apothecary>.addRecipe("pdaisy", <item:botania:pure_daisy>, <item:botania:white_petal>, <item:botania:white_petal>, <item:botania:white_petal>, <item:botania:white_petal>);
 <recipetype:botania:petal_apothecary>.addRecipe("kekimurus", <item:botania:kekimurus>, <item:botania:white_petal>, <item:botania:white_petal>,<item:botania:white_petal>, <item:minecraft:cake>, <item:botania:red_petal>);
@@ -114,6 +117,7 @@ craftingTable.addShaped("0661b7a3-2cf1-4f32-ae2f-ab9a2a88f3c4", <item:quark:pipe
 	[<item:minecraft:air>, <item:minecraft:glass>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <tag:items:minecraft:planks>, <item:minecraft:air>]
 ]);
+//Chocolateeee
 furnace.removeRecipe(<item:xlfoodmod:chocolate_syrup>);
 <recipetype:create:filling>.addRecipe("filling_test", <item:xlfoodmod:chocolate_syrup>, <item:minecraft:glass_bottle>, <fluid:create:chocolate>*500);
 craftingTable.removeRecipe(<item:xlfoodmod:dough>);
@@ -145,4 +149,5 @@ mods.extendedcrafting.TableCrafting.addShaped("36cd6730-c1fa-4fb5-91cc-d4f46adfc
 	[<item:minecraft:carrot>, <item:create:chocolate_glazed_berries>, <item:minecraft:carrot>], 
 	[<item:farmersdelight:wheat_dough>, <item:farmersdelight:wheat_dough>, <item:farmersdelight:wheat_dough>]
 ]);
-<recipetype:create:mixing>.addRecipe("createnewcircuit", "heated", <item:create:precision_mechanism>, [<item:xlfoodmod:caramel_apple>, <item:immersiveengineering:wirecoil_redstone>*4, <item:immersiveengineering:electron_tube>*2, <item:create:andesite_alloy>, <tag:items:forge:plates/brass]);
+//<recipetype:create:mixing>.addRecipe("createnewcircuit", "heated", <item:create:precision_mechanism>, [<item:xlfoodmod:caramel_apple>, <item:immersiveengineering:wirecoil_redstone>*4, <item:immersiveengineering:electron_tube>*2, <item:create:andesite_alloy>, <tag:items:forge:plates/brass]);
+//This is a comment for now, i think it borked things
