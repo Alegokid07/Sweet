@@ -1,0 +1,13 @@
+//RENAME TO kubejs.txt IN RELEASES
+//THIS IS FOR KubeJS RELATED CraftTweaker RECIPES!!
+
+<recipetype:immersiveengineering:coke_oven>.addRecipe("sugartocrystal", <item:minecraft:sugar>, 100, <item:kubejs:crystallised_sugar>, 0);
+<recipetype:create:mixing>.addRecipe("caramel", "superheated", <fluid:kubejs:caramel> *1000, [<item:kubejs:crystallised_sugar>]);
+<recipetype:thermal:pulverizer>.addRecipe("rawcarbon1", [<item:kubejs:raw_carbon> % 100, <item:minecraft:coal> %15] , <item:kubejs:fizzied_coal>, 0, 500);
+<recipetype:create:milling>.addRecipe("rawcarbon23", [<item:kubejs:raw_carbon>, <item:minecraft:coal> % 15], <item:kubejs:fizzied_coal>);
+<recipetype:immersiveengineering:crusher>.addRecipe("rawcarbon4", <item:kubejs:fizzied_coal>, 500, <item:kubejs:raw_carbon> *2, <item:minecraft:coal> %15);
+furnace.addRecipe("carbon", <item:kubejs:carbon>, <item:kubejs:raw_carbon>, 1.0, 100);
+<recipetype:create:mixing>.addRecipe("cola", "none", <fluid:kubejs:cola> *1000, [<item:minecraft:sugar>], [<fluid:kubejs:diet_coke>*1000]);
+<recipetype:create:mixing>.addRecipe("co2", "heated", <fluid:kubejs:carbon_dioxide> *1000, [<item:kubejs:oxidised_carbon>]);
+<recipetype:create:mixing>.addRecipe("co2water", "none", <fluid:kubejs:carbonated_water> *2000, [<item:minecraft:air>], [<fluid:kubejs:carbon_dioxide> *1000, <fluid:minecraft:water> *1000]);
+<recipetype:create:mixing>.addRecipe("dcoke", "none", <fluid:kubejs:diet_coke> *2000, [<item:minecraft:air>], [<fluid:kubejs:carbonated_water> *1000, <fluid:kubejs:caramel> *1000]);
